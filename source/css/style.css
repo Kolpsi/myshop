@@ -413,13 +413,16 @@ input[type="radio"].visually-hidden {
   }
 }
 @media (min-width: 768px) {
+  .main-nav {
+    margin-bottom: 0;
+  }
   .main-nav__toggle {
     display: none;
   }
 }
 .site-list {
-  padding: 0;
   margin-bottom: 0;
+  padding: 0;
 }
 .site-list a[href]:hover,
 .site-list a[href]:focus {
@@ -454,14 +457,14 @@ input[type="radio"].visually-hidden {
   }
   .site-list__item {
     position: relative;
-    width: 65px;
     flex-grow: 1;
+    width: 65px;
   }
   .site-list__item::before {
     content: "";
     position: absolute;
     top: 10px;
-    right: 0px;
+    right: 0;
     width: 2px;
     height: 17px;
     background-color: #ffffff;
@@ -508,6 +511,9 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
   background: url("../img/background-slider.jpg") center no-repeat;
 }
+.slider__img {
+  display: none;
+}
 .slide {
   position: absolute;
   top: 0;
@@ -540,7 +546,7 @@ input[type="radio"].visually-hidden {
 #product-3:checked ~ .slider #slider3,
 #product-4:checked ~ .slider #slider4,
 #product-5:checked ~ .slider #slider5 {
-  display: block;
+  display: inline-block;
 }
 #product-1:checked ~ .slider label[for="product-1"],
 #product-2:checked ~ .slider label[for="product-2"],
@@ -566,7 +572,6 @@ input[type="radio"].visually-hidden {
   font-size: 17px;
   line-height: 28px;
   text-align: center;
-  text-transform: lowercase;
   font-family: "Myriad pro", "Arial", sans-serif;
 }
 .slider__button {
@@ -583,6 +588,45 @@ input[type="radio"].visually-hidden {
   text-decoration: none;
   border: solid 3px #ffffff;
   border-radius: 6.8px;
+}
+@media (min-width: 768px) {
+  .slider {
+    width: 768px;
+    min-height: 450px;
+  }
+  .slide {
+    width: 400px;
+    min-height: 450px;
+  }
+  .slider__wrapper {
+    margin-left: 100px;
+    margin-top: 80px;
+  }
+  .slider__description {
+    width: 300px;
+    text-align: left;
+  }
+  .slider__title {
+    text-align: left;
+  }
+  .slider__button {
+    margin: 0;
+  }
+  .slider__img {
+    display: block;
+    margin-left: 20px;
+    margin-top: 65px;
+  }
+  #product-1:checked ~ .slider #slider1,
+  #product-2:checked ~ .slider #slider2,
+  #product-3:checked ~ .slider #slider3,
+  #product-4:checked ~ .slider #slider4,
+  #product-5:checked ~ .slider #slider5 {
+    display: flex;
+  }
+  .slider__control {
+    left: 400px;
+  }
 }
 .slider-category__item {
   width: 320px;

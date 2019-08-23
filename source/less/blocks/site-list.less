@@ -1,6 +1,6 @@
 .site-list {
-  padding: 0;
   margin-bottom: 0;
+  padding: 0;
 }
 
 .site-list a[href] {
@@ -39,33 +39,37 @@
 }
 
 @media (min-width: @tablet-width) {
-    .site-list {
+  .site-list {
     display: flex;
     width: 100%;
   }
 
   .site-list__item {
     position: relative;
-    width: 65px;
+
     flex-grow: 1;
+    width: 65px;
 
     &::before {
       content: "";
       position: absolute;
       top: 10px;
-      right: 0px;
+      right: 0;
+
       width: 2px;
       height: 17px;
+
       background-color: #ffffff;
     }
 
     &:last-of-type::before {
-      display:none;
+      display: none;
     }
   }
 
   .site-list__link {
     padding: 8px 0;
+
     line-height: 19px;
   }
 }
