@@ -73,3 +73,26 @@
     line-height: 19px;
   }
 }
+
+@media (min-width: @desktop-width) {
+  .site-list {
+    margin-top: 0;
+    width: 840px;
+    margin: 0 auto;
+  }
+
+  .site-list__link {
+    font-size: 21px;
+    line-height: 19px;
+
+  }
+
+  .site-list__item {
+    width: 120px;
+
+    &::before {
+      right: 0;
+    }
+
+  }
+}

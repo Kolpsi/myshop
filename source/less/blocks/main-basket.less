@@ -30,3 +30,19 @@
     text-align: left;
   }
 }
+
+@media (min-width: @desktop-width) {
+  .main-basket {
+    margin-right: 60px;
+    margin-top: 20px;
+    padding: 0;
+
+    &::after {
+      left: 10px;
+    }
+  }
+
+  .main-basket__text {
+    display: none;
+  }
+}

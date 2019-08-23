@@ -3,7 +3,7 @@
   display: block;
   width: 300px;
   margin: 10px 0 10px 10px;
-  padding: 5px 0;
+  padding: 6px 0;
 
   border: 1px solid #dcdcdc;
 }
@@ -21,11 +21,19 @@
 
 @media (min-width: @tablet-width) {
   .search {
-    margin-top: 30px;
+    margin-top: 27px;
   }
 
   .label-search::before {
-    top: 35px;
-    right: 230px;
+    top: 33px;
+    right: 425px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .search {
+    width: 434px;
+    margin-right: 30px;
+    margin-bottom: 0;
   }
 }
