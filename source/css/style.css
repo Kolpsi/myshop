@@ -754,6 +754,15 @@ input[type="radio"].visually-hidden {
     margin-top: 20px;
   }
 }
+@media (min-width: 1200px) {
+  .slider-category {
+    width: 1080px;
+    margin: 0 auto;
+  }
+  .slider-category__item {
+    width: 320px;
+  }
+}
 .button {
   display: block;
   box-sizing: border-box;
@@ -772,15 +781,19 @@ input[type="radio"].visually-hidden {
   position: absolute;
   width: 29px;
   height: 88px;
-  top: 80px;
+  top: 50px;
+  left: -65px;
 }
 .owl-next {
   position: absolute;
-  right: 0;
-  top: 80px;
+  right: -65px;
+  top: 50px;
 }
 .owl-dots {
   height: 0;
+}
+.owl-item {
+  width: 340px;
 }
 .product__list {
   margin: 0;
