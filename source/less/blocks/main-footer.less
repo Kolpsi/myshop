@@ -1,4 +1,4 @@
-.main-footer {
+.main-footer__wrapper {
   background-color: #358ea7;
   display: flex;
   flex-wrap: wrap;
@@ -46,4 +46,29 @@
   font-size: 15px;
   line-height: 28px;
   text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .main-footer {
+    width: 100%;
+    min-height: 330px;
+    background-color: #358ea7;
+  }
+
+  .main-footer__title {
+    text-transform: uppercase;
+    margin-bottom: 25px;
+  }
+
+  .main-footer__list {
+    margin-top: 45px;
+  }
+
+  .main-footer__item {
+    line-height: 28px;
+  }
+
+  .main-footer__wrapper {
+    width: 768px;
+  }
 }
