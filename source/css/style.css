@@ -447,6 +447,33 @@ input[type="radio"].visually-hidden {
     box-shadow: 0 1px 0 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 0 rgba(255, 255, 255, 0.2);
   }
 }
+@media (min-width: 768px) {
+  .site-list {
+    display: flex;
+    width: 100%;
+  }
+  .site-list__item {
+    position: relative;
+    width: 65px;
+    flex-grow: 1;
+  }
+  .site-list__item::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    width: 2px;
+    height: 17px;
+    background-color: #ffffff;
+  }
+  .site-list__item:last-of-type::before {
+    display: none;
+  }
+  .site-list__link {
+    padding: 8px 0;
+    line-height: 19px;
+  }
+}
 .main-basket {
   position: relative;
   display: block;
