@@ -13,11 +13,20 @@
   &::after {
     content: "";
     position: absolute;
-    left: 120px;
-    top: -5px;
+    left: 100px;
+    top: -2px;
     width: 41px;
     height: 37px;
 
     background: url("../img/icon-basket.svg") center no-repeat;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .main-basket {
+    margin: 0;
+    min-width: 150px;
+    margin-top: 25px;
+    text-align: left;
   }
 }

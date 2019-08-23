@@ -329,6 +329,11 @@ input[type="radio"].visually-hidden {
   color: #00a9d8;
   text-decoration: none;
 }
+@media (min-width: 768px) {
+  .page-header-logo {
+    padding: 14px 0;
+  }
+}
 .searche {
   position: relative;
   display: block;
@@ -345,6 +350,15 @@ input[type="radio"].visually-hidden {
   width: 20px;
   height: 20px;
   background: url("../img/icon-searche.svg") center no-repeat;
+}
+@media (min-width: 768px) {
+  .searche {
+    margin-top: 30px;
+  }
+  .label-search::before {
+    top: 35px;
+    right: 230px;
+  }
 }
 .main-nav {
   background-color: #00a9d8;
@@ -398,6 +412,11 @@ input[type="radio"].visually-hidden {
     background: url("../img/icon-cross.svg") center no-repeat;
   }
 }
+@media (min-width: 768px) {
+  .main-nav__toggle {
+    display: none;
+  }
+}
 .site-list {
   padding: 0;
   margin-bottom: 0;
@@ -441,11 +460,19 @@ input[type="radio"].visually-hidden {
 .main-basket::after {
   content: "";
   position: absolute;
-  left: 120px;
-  top: -5px;
+  left: 100px;
+  top: -2px;
   width: 41px;
   height: 37px;
   background: url("../img/icon-basket.svg") center no-repeat;
+}
+@media (min-width: 768px) {
+  .main-basket {
+    margin: 0;
+    min-width: 150px;
+    margin-top: 25px;
+    text-align: left;
+  }
 }
 .slider {
   position: relative;
@@ -662,6 +689,13 @@ input[type="radio"].visually-hidden {
   font-size: 15px;
   line-height: 28px;
   text-align: center;
+}
+@media (min-width: 768px) {
+  .main-menu {
+    width: 769px;
+    display: flex;
+    justify-content: space-around;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
