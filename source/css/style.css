@@ -334,7 +334,7 @@ input[type="radio"].visually-hidden {
     padding: 14px 0;
   }
 }
-.searche {
+.search {
   position: relative;
   display: block;
   width: 300px;
@@ -352,7 +352,7 @@ input[type="radio"].visually-hidden {
   background: url("../img/icon-searche.svg") center no-repeat;
 }
 @media (min-width: 768px) {
-  .searche {
+  .search {
     margin-top: 30px;
   }
   .label-search::before {
@@ -591,6 +591,7 @@ input[type="radio"].visually-hidden {
 }
 @media (min-width: 768px) {
   .slider {
+    margin: 0 auto;
     width: 768px;
     min-height: 450px;
   }
@@ -629,22 +630,22 @@ input[type="radio"].visually-hidden {
   }
 }
 .slider-category__item {
+  position: relative;
   width: 320px;
   min-height: 190px;
   margin: 0;
   padding: 0;
-  position: relative;
 }
 .slider-category__list {
   padding: 0;
   list-style: none;
 }
 .slider-category__title {
+  font-weight: bold;
   font-size: 27px;
   line-height: 25px;
-  color: #afafaf;
   text-align: center;
-  font-weight: bold;
+  color: #afafaf;
 }
 .slider-category__button {
   margin: 0 auto;
@@ -654,7 +655,28 @@ input[type="radio"].visually-hidden {
 }
 @media (min-width: 768px) {
   .slider-category__item {
+    display: flex;
+    width: 375px;
     border-right: 1px solid rgba(0, 0, 0, 0.3);
+  }
+  .slider-category__list {
+    margin: 0;
+  }
+  .slider-category__title {
+    margin-top: 0;
+    margin-bottom: 20px;
+    width: 100px;
+    margin-right: 20px;
+    text-align: left;
+  }
+  .slider-category__wrapper {
+    margin-top: 45px;
+  }
+  .slider-category__button {
+    margin: 0;
+  }
+  .slider-category__item .slider-category__img {
+    margin-top: 20px;
   }
 }
 .button {
@@ -681,6 +703,9 @@ input[type="radio"].visually-hidden {
   position: absolute;
   right: 0;
   top: 80px;
+}
+.owl-dots {
+  height: 0;
 }
 .product__list {
   padding: 0;
@@ -720,6 +745,11 @@ input[type="radio"].visually-hidden {
 }
 .product__button {
   display: inline-block;
+}
+@media (min-width: 768px) {
+  .product__title {
+    margin-top: 0;
+  }
 }
 .main-footer {
   background-color: #358ea7;
