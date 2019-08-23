@@ -1,0 +1,23 @@
+.main-basket {
+  position: relative;
+
+  display: block;
+  padding-top: 10px;
+  margin-left: 80px;
+
+  font-size: 33px;
+  line-height: 23px;
+  color: #a1a1a1;
+  text-decoration: none;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 120px;
+    top: -5px;
+    width: 41px;
+    height: 37px;
+
+    background: url("../img/icon-basket.svg") center no-repeat;
+  }
+}

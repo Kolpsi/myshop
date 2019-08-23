@@ -1,0 +1,66 @@
+.main-nav {
+  background-color: #00a9d8;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+@media (max-width: @mobile-width-only) {
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav--closed .site-list {
+    display: none;
+  }
+
+  .main-nav--nojs .site-list {
+    display: block;
+  }
+
+  .main-nav__toggle {
+    position: absolute;
+    right: 20px;
+    top: -105px;
+    z-index: 2;
+
+    display: block;
+    width: 30px;
+    height: 25px;
+
+    background-color: #ffffff;
+    border: none;
+    cursor: pointer;
+  }
+
+  .main-nav--closed .main-nav__toggle::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 5px;
+
+    width: 23px;
+    height: 3px;
+
+    background-color: #00a9d8;
+    box-shadow: 0 8px 0 0 #00a9d8, 0 16px 0 0 #00a9d8;
+  }
+
+  .main-nav--opened .main-nav__toggle {
+    top: 15px;
+    right: 10px;
+
+    background-color: #00a9d8;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 3px;
+
+      width: 23px;
+      height: 22px;
+
+      background: url("../img/icon-cross.svg") center no-repeat;
+    }
+  }
+}
