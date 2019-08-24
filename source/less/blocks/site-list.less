@@ -6,7 +6,7 @@
 .site-list a[href] {
   &:hover,
   &:focus {
-    background-color: #4dc3e4;
+    background-color: #003863;
   }
 
   &:active {
@@ -17,6 +17,10 @@
 .site-list__item {
   list-style: none;
   text-align: center;
+
+  &--active {
+    background-color: #4dc3e4;
+  }
 }
 
 .site-list__link {
@@ -76,15 +80,14 @@
 
 @media (min-width: @desktop-width) {
   .site-list {
-    margin-top: 0;
     width: 840px;
     margin: 0 auto;
+    margin-top: 0;
   }
 
   .site-list__link {
     font-size: 21px;
     line-height: 19px;
-
   }
 
   .site-list__item {
