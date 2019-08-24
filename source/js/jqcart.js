@@ -267,5 +267,10 @@
       $.error('Метод с именем "' + opts + '" не существует!');
     }
   };
+
+  document.addEventListener('DOMContentLoaded', function() {
+    actions.getSum();
+  }, false);
+
 })(jQuery);
 
