@@ -14,7 +14,7 @@
     content: "";
     position: absolute;
     top: -2px;
-    left: 100px;
+    left: 0px;
 
     width: 41px;
     height: 37px;
@@ -26,10 +26,13 @@
 @media (min-width: @tablet-width) {
   .main-basket {
     min-width: 150px;
-    margin: 0;
-    margin-top: 25px;
+    margin: 25px 0 0 0;
 
     text-align: left;
+  }
+
+  .main-basket__text {
+    display: none;
   }
 }
 
@@ -42,9 +45,5 @@
     &::after {
       left: 10px;
     }
-  }
-
-  .main-basket__text {
-    display: none;
   }
 }

@@ -3,9 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link href="css/style.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/owl.carousel.min.css">
   <link href="css/jqcart.css" rel="stylesheet" type="text/css">
+  <link href="css/style-min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+
   <title>Аксессуары</title>
 </head>
 <body>
@@ -15,10 +16,12 @@
         <h1 class="visually-hidden">Интернет-магазин одежды и акссесуаров myshop</h1>
         <a href="#" class="page-header-logo">MyShop</a>
         <form method="get" action="#" class="form-searche">
-          <input type="search" name="search" class="search" id="search">
-          <label for="search" class="label-search"><span class="visually-hidden">Поиск по сайту</span></label>
+          <div class="form-searche__wrapper">
+            <input type="search" name="search" class="search" id="search">
+            <label for="search" class="label-search"><span class="visually-hidden">Поиск по сайту</span></label>
+          </div>
         </form>
-        <a class="main-basket label-place" id="open" href="#"><span class="main-basket__text">корзина</span></a>
+        <a class="main-basket label-place" id="open" href="#"></a>
       </div>
       <nav class="main-nav main-nav--closed .main-nav--nojs">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -36,7 +39,7 @@
             <a class="site-list__link" href="#">кошельки</a>
           </li>
           <li class="site-list__item site-list__item--active">
-            <a class="site-list__link" href="#">аксесуары</a>
+            <a class="site-list__link">аксесуары</a>
           </li>
           <li class="site-list__item">
             <a class="site-list__link" href="#">обувь</a>
@@ -304,6 +307,7 @@
 $(function(){
   'use strict';
   // инициализация плагина
+
   $.jqCart({
       buttons: '.add_item',
       handler: './php/handler.php',
@@ -318,6 +322,7 @@ $(function(){
     $.jqCart('clearCart');
   });
 });
+
 </script>
 </body>
 </html>
