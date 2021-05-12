@@ -8,7 +8,7 @@
     "i": "^0.3.6",
     "npm": "^6.11.2",
     "owl.carousel": "^2.3.4",
-    "postcss": "^7.0.17"
+    "postcss": "^8.2.10"
   },
   "devDependencies": {
     "browser-sync": "^2.26.7",
